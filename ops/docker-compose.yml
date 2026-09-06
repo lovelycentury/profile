@@ -1,0 +1,33 @@
+# VPS stack: the profile site alone.
+#
+# No ports are published. Caddy in ~/vps-infra owns 80/443 and proxies straight
+# to this container over the shared network:
+#
+#   vps-infra/Caddyfile → okryshto.dev, www.okryshto.dev → profile:5200
+#
+# NODE_ENV, PORT and HOSTNAME are already baked into the image (see the root
+# Dockerfile), and so is the healthcheck — nothing to configure here.
+#
+#   docker compose up -d --pull always --remove-orphans
+#   docker compose logs -f
+
+name: profile
+
+networks:
+  vps-infra:
+    external: true
+    name: vps-infra_default
+
+services:
+  profile:
+    image: ghcr.io/lovelycentury/profile:latest
+    # The name ~/vps-infra/Caddyfile proxies to. Has to stay unique across
+    # every stack attached to vps-infra_default.
+    container_name: profile
+    restart: unless-stopped
+    networks: [vps-infra]
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
