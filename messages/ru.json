@@ -40,7 +40,7 @@
         "tags": ["Svelte", "ICP", "Блокчейн"]
       },
       "privateStorybook": {
-        "title": "Private Storybook",
+        "title": "Personal Design System",
         "description": "Dark-first дизайн-система, которая генерируется из TypeScript сразу в Figma: компоненты, варианты, иконки, токены и шаблоны страниц из одного источника правды.",
         "tags": ["TypeScript", "Figma Plugin API", "Claude Code"]
       },

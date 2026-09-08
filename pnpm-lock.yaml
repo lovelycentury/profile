@@ -15,11 +15,11 @@ importers:
         specifier: ^0.6.2
         version: 0.6.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@okkly/design-system':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
       '@okkly/react':
-        specifier: ^0.1.0
-        version: 0.1.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: ^0.1.1
+        version: 0.1.1(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       next:
         specifier: ^16.3.0
         version: 16.3.4(@types/node@22.20.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.104.0)
@@ -360,8 +360,8 @@ packages:
       react: ^18 || ^19
       react-dom: ^18 || ^19
 
-  '@okkly/design-system@0.1.0':
-    resolution: {integrity: sha512-spktd90dEVx29Q1X/XbwWNhiYcLCQfhWg/Y3fo54fMv3byGip88x/0O00SNH3dWSd+AJCoYNkAT7EJbHdJRe+w==}
+  '@okkly/design-system@0.1.1':
+    resolution: {integrity: sha512-GhcgWbXPym5hgwiPshipHhJQcVI8cb+UjyxH4e8s/uVwCE2u3PN5hPOdBXrOHluJot+4GitLBW7Dr8HnZZX/JA==}
     engines: {node: '>=20'}
 
   '@okkly/helpers@0.1.0':
@@ -378,8 +378,8 @@ packages:
     peerDependencies:
       react: '>=18'
 
-  '@okkly/react@0.1.0':
-    resolution: {integrity: sha512-ETM9D7e/Dbl2GWaZBHKx8lED8Za2d5ZgjCCn3zmAw6dvsMElmbDMPiPvNsbdfnXkjN7h3bGf35qxoXX0UEEFyA==}
+  '@okkly/react@0.1.1':
+    resolution: {integrity: sha512-j7++5RRukkAvSMs5abqFyGIAMAgpj2c3gU9hVeRoMdfQVNAHEzpP4BYaoo4W0AaEqIDrP3MrtCH0Tes9KL0YeA==}
     engines: {node: '>=20'}
     peerDependencies:
       react: '>=18'
@@ -2161,7 +2161,7 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  '@okkly/design-system@0.1.0': {}
+  '@okkly/design-system@0.1.1': {}
 
   '@okkly/helpers@0.1.0': {}
 
@@ -2171,12 +2171,12 @@ snapshots:
     dependencies:
       react: 19.2.8
 
-  '@okkly/react@0.1.0(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@okkly/react@0.1.1(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@maskito/core': 5.4.0
       '@maskito/kit': 5.4.0(@maskito/core@5.4.0)
       '@maskito/react': 5.4.0(@maskito/core@5.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@okkly/design-system': 0.1.0
+      '@okkly/design-system': 0.1.1
       '@okkly/helpers': 0.1.0
       '@okkly/icons': 0.1.0
       '@okkly/react-hooks': 0.1.0(react@19.2.8)
