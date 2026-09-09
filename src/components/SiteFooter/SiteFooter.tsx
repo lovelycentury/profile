@@ -13,7 +13,7 @@ export default async function SiteFooter() {
       <div className={styles.inner}>
         <div className={styles.hairline} />
         <div className={styles.row}>
-          <Logo layout="horizontal" size={28} />
+          <Logo layout="horizontal" size={28} label="" />
           <nav className={styles.links}>
             {CONTACT_LINKS.map(({ id, href }) => (
               <a key={id} className={styles.link} href={href}>
