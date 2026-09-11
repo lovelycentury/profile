@@ -1,13 +1,13 @@
 {
   "Metadata": {
     "title": "Алексей Крыштопа — Senior Frontend Engineer",
-    "description": "Senior Frontend Engineer с 5 годами опыта. Сейчас веду frontend в Datasport Germany.",
+    "description": "Senior Frontend Engineer с 5 годами опыта. Активно ищу новую работу.",
     "skipToContent": "Перейти к содержимому"
   },
   "Hero": {
     "availability": "Открыт к избранным сотрудничествам",
     "title": "Я двигаю кнопки туда-сюда.",
-    "summary": "Senior Frontend Engineer с 5 годами опыта. Сейчас веду frontend в Datasport Germany.",
+    "summary": "Senior Frontend Engineer с 5 годами опыта. Активно ищу новую работу.",
     "role": "Frontend Lead · Senior React Developer",
     "location": "Хайльбронн, Германия",
     "primaryCta": "Смотреть работы",
@@ -19,7 +19,7 @@
   "Intro": {
     "eyebrow": "Senior Frontend Engineer",
     "title": "Обо мне",
-    "lead": "Я Senior Frontend Engineer с 5 годами опыта, сейчас веду frontend в Datasport Germany. Люблю коротко и по делу — поэтому так же и здесь.",
+    "lead": "Я Senior Frontend Engineer с 5 годами опыта, активно ищу новую работу. Люблю коротко и по делу — поэтому так же и здесь.",
     "drive": "Что меня драйвит: хочу понимать системы end-to-end — не просто собирать то, что в спеке, а разбирать требования с product owners и дизайнерами, пока детали не станут ясными.",
     "scale": "Мне важно строить то, что масштабируется дальше одной фичи — дизайн-системы, reusable-компоненты, код, на котором другие инженеры могут строить без догадок.",
     "mentoring": "Ещё люблю менторить — код-ревью, пейринг, помогать инженерам становиться самостоятельными.",
