@@ -31,7 +31,7 @@ export default function LocaleFab() {
   const rootRef = useRef<HTMLDivElement>(null);
   const menuId = useId();
 
-  const current = LANGUAGE_OPTIONS.find((option) => option.id === locale) ?? LANGUAGE_OPTIONS[2];
+  const current = LANGUAGE_OPTIONS.find((option) => option.id === locale) ?? LANGUAGE_OPTIONS[0];
 
   useEffect(() => {
     if (!open) return;
