@@ -39,6 +39,7 @@ body {
     background: var(--okkly-accent-primary);
     color: var(--okkly-accent-contrast);
     text-decoration: none;
+    display: none;
 
     &:focus-visible {
       translate: -50% 0;
