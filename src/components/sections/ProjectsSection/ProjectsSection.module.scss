@@ -34,6 +34,11 @@
     color: #f5f5f7;
   }
 
+  overflow: visible;
+  :global(.okkly-project-card a) {
+    overflow: visible;
+  }
+
   :global(.okkly-project-card__description) {
     color: #c9c9d1;
   }
