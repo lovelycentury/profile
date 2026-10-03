@@ -40,6 +40,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
               {
                 "--okkly-project-card-fill": gradient,
                 "--okkly-project-card-fill-light": gradientLight,
+                overflow: "visible",
               } as CSSProperties
             }
             logo={<Logo layout="compact" size={32} showLabel={false} variant="outlined" />}
