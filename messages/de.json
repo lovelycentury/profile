@@ -179,7 +179,7 @@
       },
       "pattern-matching": {
         "title": "Pattern-matching",
-        "body": "Ich bin von Natur aus aufmerksam. Ich merke mir wichtige Fakten und finde Zusammenhänge, wie ein Detektiv. Das hilft mir, Schwachstellen zu erkennen. Manche nennen das paranoid. Beides kommt aus derselben Fähigkeit."
+        "body": "Ich bemerke kleine Details, merke sie mir und verbinde sie zu Ursache und Wirkung. So finde ich Bugs, bevor sie in Produktion landen, und deshalb frage ich manchmal einmal zu oft „Was wäre, wenn?“"
       }
     }
   },

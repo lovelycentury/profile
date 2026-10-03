@@ -161,7 +161,7 @@ export const STATS: readonly {
   suffix?: string;
 }[] = [
   { id: "years", value: 5, suffix: "+" },
-  { id: "participants", value: 500, suffix: "K+" },
+  // { id: "participants", value: 500, suffix: "K+" },
   { id: "hackathon", value: 1 },
 ];
 
@@ -169,8 +169,8 @@ export const STATS: readonly {
 /** "Beyond code" cards — adaptive 2×N grid (stacks below `sm` container). */
 export const BEYOND_CODE: readonly { id: string; icon: IconName }[] = [
   { id: "music", icon: "iconMusic" },
-  { id: "boxing", icon: "iconTarget" },
-  { id: "books", icon: "iconBookOpen" },
+  // { id: "boxing", icon: "iconTarget" },
+  // { id: "books", icon: "iconBookOpen" },
   { id: "pattern-matching", icon: "iconSearch" },
 ];
 
@@ -181,7 +181,6 @@ export const SELECTED_LINKS: readonly {
   featured?: boolean;
 }[] = [
   { id: "github", href: CONTACT.github, meta: CONTACT.githubHandle, featured: true },
-  { id: "onyx", href: CONTACT.onyx, meta: CONTACT.onyxHandle },
   { id: "linkedin", href: CONTACT.linkedin, meta: CONTACT.linkedinHandle },
   // { id: "email", href: `mailto:${CONTACT.email}`, meta: CONTACT.email },
 ];
@@ -190,5 +189,4 @@ export const CONTACT_LINKS: readonly { id: string; href: string }[] = [
   // { id: "email", href: `mailto:${CONTACT.email}` },
   { id: "linkedin", href: CONTACT.linkedin },
   { id: "github", href: CONTACT.github },
-  { id: "onyx", href: CONTACT.onyx },
 ];

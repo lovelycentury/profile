@@ -11,9 +11,9 @@
 }
 
 .statRow {
-  display: grid;
+  display: flex;
   gap: 1rem;
-  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
 
   @include m.container(min, md) {
     gap: 1.5rem;
@@ -26,6 +26,7 @@
   flex-direction: column;
   gap: 0.375rem;
   padding: 1.25rem;
+  flex-grow: 1;
   @include m.surface(var(--profile-radius-lg));
 
   @include m.screen(min, sm) {

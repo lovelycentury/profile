@@ -19,7 +19,7 @@
   "Intro": {
     "eyebrow": "Senior Frontend Engineer",
     "title": "About",
-    "lead": "I'm a Senior Frontend Engineer with 5 years of experience, actively looking for a new opportunity. I like to keep things short and to the point — so I'll do the same here.",
+    "lead": "I'm a Senior Frontend Engineer with 5 years of experience, actively looking for a new opportunity. I like to keep things short and to the point.",
     "drive": "What drives me: I like understanding systems end-to-end — not just building what's specified, but digging into requirements with product owners and designers until the details are actually clear.",
     "scale": "I care about building things that scale beyond one feature — design systems, reusable components, code that other engineers can build on without guessing.",
     "mentoring": "I also enjoy mentoring — code review, pairing, helping engineers grow into independent contributors.",
@@ -145,7 +145,7 @@
   "Credibility": {
     "stats": {
       "years": {
-        "label": "Years Frontend Lead"
+        "label": "Years Frontend"
       },
       "participants": {
         "label": "Participants scaled"
@@ -179,14 +179,14 @@
       },
       "pattern-matching": {
         "title": "Pattern-matching",
-        "body": "Attentive by nature — I remember key facts and build cause-and-effect chains like a detective. It found the vulnerabilities; it also gets me called paranoid. Both are true costs of the same skill."
+        "body": "I notice small details, remember them, and connect them into cause and effect. That's how I catch bugs before they reach production, and also why I sometimes ask “what if?” once too often."
       }
     }
   },
   "Links": {
     "eyebrow": "Selected links",
     "title": "A few doors worth opening.",
-    "summary": "The short list — work, words, and where to find me. Everything else can wait.",
+    "summary": "The short list — work, words, and where to find me.",
     "items": {
       "github": {
         "title": "GitHub",
