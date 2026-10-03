@@ -14,7 +14,7 @@ export default async function HeroSection() {
             <span className={styles.dot} aria-hidden="true" />
             {t("availability")}
           </p>
-          <h1 className={styles.title}>{t("title")}..</h1>
+          <h1 className={styles.title}>{t("title")}</h1>
           <p className={styles.summary}>{t("summary")}</p>
           <p className={styles.meta}>
             <span>{t("role")}</span>
