@@ -5,8 +5,6 @@ import { routing, type Locale } from "./routing";
 
 const loadMessages: Record<Locale, () => Promise<{ default: Record<string, unknown> }>> = {
   en: () => import("../../messages/en.json"),
-  uk: () => import("../../messages/uk.json"),
-  ru: () => import("../../messages/ru.json"),
   de: () => import("../../messages/de.json"),
 };
 

@@ -228,8 +228,6 @@
     "close": "Close language menu",
     "languages": {
       "en": "English",
-      "uk": "Ukrainian",
-      "ru": "Russian",
       "de": "German"
     }
   },

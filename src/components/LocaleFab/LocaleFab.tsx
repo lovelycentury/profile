@@ -13,8 +13,6 @@ const LANGUAGE_OPTIONS: readonly {
   short: string;
   color: FabColor;
 }[] = [
-  // { id: "ru", short: "RU", color: "dante" },
-  // { id: "uk", short: "UK", color: "indigo" },
   { id: "en", short: "EN", color: "primary" },
   { id: "de", short: "DE", color: "violet" },
 ];
