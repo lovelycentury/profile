@@ -1,11 +1,7 @@
-// Rendered for requests that never reach a locale segment (unknown top-level paths).
+import { redirect } from "next/navigation";
+
+// Rendered for requests that never reach a locale segment (unknown top-level paths)
+// or carry an unsupported locale — send them to the root, where the proxy picks a locale.
 export default function GlobalNotFound() {
-  return (
-    <html lang="en">
-      <body>
-        <h1>404</h1>
-        <p>This page does not exist.</p>
-      </body>
-    </html>
-  );
+  redirect("/");
 }
