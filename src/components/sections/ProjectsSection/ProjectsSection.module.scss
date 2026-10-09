@@ -20,11 +20,17 @@
   min-width: 0;
   overflow: hidden;
   border-radius: 1.75rem;
+  // Lets .card size its floor off the cell width (cq units can't target self).
+  container-type: inline-size;
 }
 
 .card {
   width: 100%;
   max-width: 100%;
+  // The library's fixed aspect-ratio doesn't grow with content on iOS Safari,
+  // so long descriptions got clipped. Keep the ratio as a floor instead.
+  aspect-ratio: auto;
+  min-height: calc(100cqw * 290 / 476);
   // Beats the library's layered `overflow: hidden` on .okkly-project-card.
   overflow: visible;
   background-image: var(--okkly-project-card-fill);
