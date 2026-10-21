@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Oleksii Kryshtopa — Senior Frontend Engineer",
+    "title": "Oleksii Kryshtopa — Frontend Engineer",
     "description": "React and TypeScript engineer specializing in design systems and component architecture.",
     "skipToContent": "Skip to content"
   },
@@ -17,9 +17,9 @@
     "fullName": "Oleksii Kryshtopa"
   },
   "Intro": {
-    "eyebrow": "Senior Frontend Engineer",
+    "eyebrow": "Frontend Engineer",
     "title": "About",
-    "lead": "I'm a Senior Frontend Engineer with 5 years of experience, actively looking for a new opportunity. I like to keep things short and to the point.",
+    "lead": "I'm a Frontend Engineer with 5 years of experience, actively looking for a new opportunity. I like to keep things short and to the point.",
     "drive": "What drives me: I like understanding systems end-to-end — not just building what's specified, but digging into requirements with product owners and designers until the details are actually clear.",
     "scale": "I care about building things that scale beyond one feature — design systems, reusable components, code that other engineers can build on without guessing.",
     "mentoring": "I also enjoy mentoring — code review, pairing, helping engineers grow into independent contributors.",
@@ -72,7 +72,7 @@
     "items": {
       "sporTechCompany": {
         "company": "Datasport Germany GmbH",
-        "role": "Frontend Lead / Senior React Developer",
+        "role": "Frontend Lead / React Developer",
         "period": "Feb 2023 — Present",
         "place": "Germany · Remote",
         "summary": "Took over the platform after a high-value CRM project had failed. Restructured the team, cut monthly running costs sharply, and kept every key client.",
