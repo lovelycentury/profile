@@ -8,7 +8,7 @@
     "availability": "Open to select collaborations",
     "title": "I move buttons around.",
     "summary": "React and TypeScript engineer specializing in design systems and component architecture.",
-    "role": "Frontend Developer",
+    "role": "Frontend Engineer",
     "location": "Heilbronn, Germany",
     "primaryCta": "See my work",
     "secondaryCta": "Get in touch",
@@ -72,7 +72,7 @@
     "items": {
       "sporTechCompany": {
         "company": "Datasport Germany GmbH",
-        "role": "Frontend Lead / React Developer",
+        "role": "Frontend Engineer",
         "period": "Feb 2023 — Present",
         "place": "Germany · Remote",
         "summary": "Took over the platform after a high-value CRM project had failed. Restructured the team, cut monthly running costs sharply, and kept every key client.",
@@ -86,7 +86,7 @@
       },
       "addTechCompany": {
         "company": "MINT",
-        "role": "Middle Frontend Developer",
+        "role": "Middle Frontend Engineer",
         "period": "Nov 2021 — Mar 2023",
         "place": "Kharkiv, Ukraine · Remote",
         "summary": "Owned code quality and TDD culture on a media-planning platform.",
