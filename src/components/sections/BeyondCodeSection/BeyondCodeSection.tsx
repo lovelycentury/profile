@@ -13,7 +13,7 @@ export default async function BeyondCodeSection() {
 
       <div className={styles.grid}>
         {BEYOND_CODE.map((card) => (
-          <article className={styles.card} key={card.id}>
+          <article className={styles.card} key={card.id} data-reveal="">
             <div className={styles.header}>
               <span className={styles.icon}>
                 <Icon name={card.icon} fontSize="small" color="primary" />

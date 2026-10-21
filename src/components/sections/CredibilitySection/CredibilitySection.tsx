@@ -18,7 +18,7 @@ export default async function CredibilitySection() {
     <section className={styles.section}>
       <CredibilityStats stats={stats} />
 
-      <figure className={styles.quote}>
+      <figure className={styles.quote} data-reveal="">
         <blockquote className={styles.quoteText}>{t("quote")}</blockquote>
         <figcaption className={styles.quoteAuthor}>
           <a className={styles.quoteAuthorLink} href={CONTACT.onyxPrs}>
@@ -27,7 +27,7 @@ export default async function CredibilitySection() {
         </figcaption>
       </figure>
 
-      <div className={styles.award}>
+      <div className={styles.award} data-reveal="">
         <h3 className={styles.awardTitle}>{t("awardTitle")}</h3>
         <p className={styles.awardMeta}>{t("awardMeta")}</p>
         <a className={styles.awardLink} href={CONTACT.award}>

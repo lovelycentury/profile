@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Icon } from "@okkly/react";
 import { trackContactIntent, type ContactMethod } from "@/lib/analyticsEvents";
 import { CONTACT, CONTACT_LINKS, SECTION_ID } from "@/lib/profile";
+import RevealWords from "@/components/RevealWords/RevealWords";
 import styles from "./ContactSection.module.scss";
 
 export default function ContactSection() {
@@ -35,11 +36,15 @@ export default function ContactSection() {
     <section className={styles.section} id={SECTION_ID.contact}>
       <div className={styles.card}>
         <div className={styles.heading}>
-          <p className={styles.eyebrow}>{t("eyebrow")}</p>
-          <h2 className={styles.title}>{t("title")}</h2>
+          <p className={styles.eyebrow} data-reveal="">
+            {t("eyebrow")}
+          </p>
+          <h2 className={styles.title}>
+            <RevealWords text={t("title")} />
+          </h2>
         </div>
 
-        <div className={styles.row}>
+        <div className={styles.row} data-reveal="">
           <button
             type="button"
             className={styles.emailChip}
@@ -64,7 +69,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <nav className={styles.links}>
+        <nav className={styles.links} data-reveal="">
           {CONTACT_LINKS.map(({ id, href }) => (
             <a
               key={id}

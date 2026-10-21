@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import { SECTION_ID } from "@/lib/profile";
 import styles from "./IntroSection.module.scss";
 
-const BODY_KEYS = ["drive", "scale", "mentoring", "communication"] as const;
+const BODY_KEYS = ["drive", "scale", "mentoring"] as const;
 
 export default async function IntroSection() {
   const t = await getTranslations("Intro");
@@ -12,9 +12,11 @@ export default async function IntroSection() {
     <section className={styles.section} id={SECTION_ID.about}>
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
       <div className={styles.copy}>
-        <p className={styles.lead}>{t("lead")}</p>
+        <p className={styles.lead} data-reveal="">
+          {t("lead")}
+        </p>
         {BODY_KEYS.map((key) => (
-          <p className={styles.body} key={key}>
+          <p className={styles.body} key={key} data-reveal="">
             {t(key)}
           </p>
         ))}

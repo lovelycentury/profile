@@ -11,7 +11,7 @@ export default async function LinksSection() {
     <section className={styles.section}>
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} summary={t("summary")} />
 
-      <div className={styles.list}>
+      <div className={styles.list} data-reveal="">
         {SELECTED_LINKS.map(({ id, href, meta, featured }) => (
           <LinkCard
             key={id}

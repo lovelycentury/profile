@@ -1,18 +1,66 @@
 .root {
   opacity: 0;
-  transition: opacity 700ms ease-out;
+  transform: translateX(-48px);
+  transition:
+    opacity 700ms ease-out,
+    transform 1400ms cubic-bezier(0.22, 1, 0.36, 1);
 
   &[data-visible] {
     opacity: 1;
+    transform: none;
   }
 
   @media (prefers-reduced-motion: reduce) {
     opacity: 1;
+    transform: none;
     transition: none;
   }
 
   // Keep content visible when JS is unavailable.
   @media (scripting: none) {
     opacity: 1;
+    transform: none;
+  }
+}
+
+// Text cascade: `[data-reveal]` items slide in one after another, heading words
+// (`RevealWords`) rise in sequence. `--reveal-i` is assigned in DOM order by
+// RevealOnView. Animations (not transitions) with `backwards` fill so the
+// elements' own `transform` / `transition` / hover styles stay untouched once
+// the reveal is over. Browsers without `scripting` support simply skip it.
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  .root:not([data-visible]) {
+    [data-reveal],
+    [data-reveal-word] {
+      opacity: 0;
+    }
+  }
+
+  .root[data-visible] {
+    [data-reveal] {
+      animation: reveal-item 930ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+      animation-delay: calc(min(var(--reveal-i, 0), 8) * 120ms + 200ms);
+    }
+
+    [data-reveal-word] {
+      animation: reveal-word 800ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+      animation-delay: calc(
+        min(var(--reveal-i, 0), 8) * 120ms + 200ms + min(var(--word-i, 0), 12) * 80ms
+      );
+    }
+  }
+}
+
+@keyframes reveal-item {
+  from {
+    opacity: 0;
+    translate: -24px 0;
+  }
+}
+
+@keyframes reveal-word {
+  from {
+    opacity: 0;
+    translate: 0 0.5em;
   }
 }

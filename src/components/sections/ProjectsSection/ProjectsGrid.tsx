@@ -28,7 +28,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
   return (
     <div className={styles.grid}>
       {projects.map(({ id, href, gradient, gradientLight, title, description, tags }) => (
-        <div className={styles.cell} key={id}>
+        <div className={styles.cell} key={id} data-reveal="">
           <ProjectCard
             className={styles.card}
             href={href}

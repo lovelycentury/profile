@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Photo } from "@okkly/react";
 import HeroActions from "./HeroActions";
+import RevealWords from "@/components/RevealWords/RevealWords";
 import styles from "./HeroSection.module.scss";
 
 export default async function HeroSection() {
@@ -10,22 +11,28 @@ export default async function HeroSection() {
     <section className={styles.section}>
       <div className={styles.layout}>
         <div className={styles.content}>
-          <p className={styles.availability}>
+          <p className={styles.availability} data-reveal="">
             <span className={styles.dot} aria-hidden="true" />
             {t("availability")}
           </p>
-          <h1 className={styles.title}>{t("title")}</h1>
-          <p className={styles.summary}>{t("summary")}</p>
-          <p className={styles.meta}>
+          <h1 className={styles.title}>
+            <RevealWords text={t("title")} />
+          </h1>
+          <p className={styles.summary} data-reveal="">
+            {t("summary")}
+          </p>
+          <p className={styles.meta} data-reveal="">
             <span>{t("role")}</span>
             <span aria-hidden="true">·</span>
             <span>{t("location")}</span>
           </p>
-          <HeroActions
-            className={styles.actions}
-            primaryLabel={t("primaryCta")}
-            secondaryLabel={t("secondaryCta")}
-          />
+          <div data-reveal="">
+            <HeroActions
+              className={styles.actions}
+              primaryLabel={t("primaryCta")}
+              secondaryLabel={t("secondaryCta")}
+            />
+          </div>
         </div>
 
         <div className={styles.portrait}>
@@ -36,7 +43,7 @@ export default async function HeroSection() {
               variant="scrim"
               size="lg"
               image="/images/me-light.jpg"
-              caption={t("fullName")}
+              // caption={t("fullName")}
             />
             <Photo
               className={styles.photoLight}
@@ -44,7 +51,7 @@ export default async function HeroSection() {
               variant="scrim"
               size="lg"
               image="/images/me-light.jpg"
-              caption={t("fullName")}
+              // caption={t("fullName")}
             />
             {/* <Icon name="iconUser" fontSize="large" className={styles.glyph} />
             <p className={styles.caption}>{t("portraitPlaceholder")}</p> */}

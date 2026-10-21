@@ -19,7 +19,7 @@ export default async function SkillsSection() {
         {columns.map((groups, index) => (
           <div className={styles.column} key={index}>
             {groups.map((group) => (
-              <div className={styles.group} key={group.id}>
+              <div className={styles.group} key={group.id} data-reveal="">
                 <h3 className={styles.groupTitle}>{t(`groups.${group.id}`)}</h3>
                 <ul className={styles.items}>
                   {group.items.map((item) => (

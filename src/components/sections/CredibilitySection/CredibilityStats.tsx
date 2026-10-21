@@ -44,7 +44,7 @@ export default function CredibilityStats({ stats }: CredibilityStatsProps) {
     <NumberFlowGroup>
       <div className={styles.statRow} ref={rowRef}>
         {stats.map(({ id, value, suffix, label }) => (
-          <div className={styles.stat} key={id}>
+          <div className={styles.stat} key={id} data-reveal="">
             <p className={styles.statValue}>
               <NumberFlow
                 className={styles.statNumber}

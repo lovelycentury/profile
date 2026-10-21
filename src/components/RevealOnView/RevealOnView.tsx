@@ -11,7 +11,8 @@ type RevealOnViewProps = {
 };
 
 /**
- * Fades a section in once it enters the viewport (opacity 0 → 1) and reports
+ * Slides a section in from the left once it enters the viewport (opacity 0 → 1,
+ * translateX(-48px) → 0) and reports
  * that it was seen. Disconnects after the first reveal.
  *
  * The observer now runs even when motion is reduced — that preference only
@@ -25,6 +26,11 @@ export default function RevealOnView({ children, section }: RevealOnViewProps) {
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
+
+    // Number cascade items and word groups in DOM order so CSS can stagger them.
+    node.querySelectorAll<HTMLElement>("[data-reveal], [data-reveal-words]").forEach((el, i) => {
+      el.style.setProperty("--reveal-i", String(i));
+    });
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setVisible(true);
